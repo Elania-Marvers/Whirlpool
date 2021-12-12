@@ -25,25 +25,6 @@ void Panda::clear(unsigned int color)
     set_pixel(i, color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/******************************COLOR******************************/
-/******************************************************************/
-/******************************COLOR******************************/
-
-
 double Panda::color_ratio(int      value, 
 			       int 	min,
 			       int 	max)
@@ -74,10 +55,6 @@ unsigned int Panda::mix_color (unsigned int ca, unsigned int cb, double percent)
   return c.full;
 }
 
-/******************************GETTER******************************/
-/******************************************************************/
-/******************************GETTER******************************/
-
 int Panda::getWidth() const
 {
   return this->_px->clipable.buffer.width;
@@ -87,16 +64,6 @@ int Panda::getHeight() const
 {
   return this->_px->clipable.buffer.height;
 }
-
-
-
-
-/******************************BORDEL******************************/
-/******************************************************************/
-/******************************************************************/
-/******************************************************************/
-/******************************************************************/
-/******************************BORDEL******************************/
 
 void Panda::set_xline(t_bunny_position *pos, unsigned int color)
 {
@@ -144,8 +111,6 @@ void Panda::set_yline(t_bunny_position *pos, unsigned int color)
 	 draw.x = mi.x + vec * c)
     set_pixel(draw, color);  
 }
-
-
 
 void Panda::set_eline(t_bunny_position *pos, unsigned int color)
 {
